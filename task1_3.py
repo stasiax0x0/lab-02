@@ -1,3 +1,3 @@
-with open('sample.txt', 'r') as f:
-    for line in f:
-        print(line.strip())
+with open('sample.txt','r') as input,open('copy.txt','w') as output:
+    for line in input:
+        output.write(line)
