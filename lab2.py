@@ -3,7 +3,7 @@ import re
 with open('auth.log','r') as f:                 #opens auth.log to read
         content = f.read()                  #reads the file and sasves it as variable 'content'
         for line in f:                   #loops through each line in the file
-                print(line.())             #prints each line and removes the extra new line
+                print(line.strip())             #prints each line and removes the extra new line
 pattern = r"\d+\.\d+\.\d+\.\d+"
 found_ips = re.findall(pattern, content)        #finds all IPs in content and saves them as found_ips
 
